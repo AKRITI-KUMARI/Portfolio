@@ -19,5 +19,4 @@ A responsive and visually appealing portfolio website built using **HTML**, **CS
 - 🧠 Interactive navigation and smooth scrolling
 - 🖼️ Project showcase with images and descriptions
 - 📬 Contact form (can be integrated with Formspree or EmailJS)
-- Toggle button for Light and Dark Mode
-
+- 🌗 Light/Dark Mode Toggle for personalized viewing experience
