@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akriti | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+
+      <div class="logo">Akriti</div>
+
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Mode">
+        <i class="fas fa-moon"></i>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </nav>
+  </header>
+
+  <canvas id="background"></canvas>
+
+  <section class="hero" id="hero">
+
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="highlight">Akriti Kumari</span> 👋</h1>
+      <h2>BTech CSE-AIML | Aspiring Software Developer</h2>
+      <p>
+        I love turning ideas into intelligent, user-focused applications. With a strong foundation in Data Structures
+        and Algorithms, Web Development, AIML, and Cloud, I’m passionate about building scalable, impactful
+        software that solves real-world problems.
+      </p>
+      <div class="buttons">
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="assets/AkritiKumari_Resume.pdf" class="btn outline" download>Download Resume</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="assets/akriti_photo.jpg" alt="Akriti's Avatar" />
+    </div>
+
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="about" id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-text">
+      <p>
+        I’m <strong>Akriti Kumari</strong>, a final-year <strong>B.Tech student in CSE-AIML</strong> at Techno India
+        University with a CGPA of <strong>9.26</strong>. I’m passionate about using technology to create real-world
+        impact through intelligent, user-centric solutions.
+      </p>
+      <p>
+        With a strong foundation in <strong>Data Structures & Algorithms</strong> and experience in <strong>Web
+          Development, Artificial Intelligence, and Cloud Computing</strong>, I’ve built multiple projects that combine
+        creativity and functionality.
+      </p>
+      <p>
+        I’m skilled in <strong>C, C++, Java, Python</strong> and enjoy building full-stack applications using
+        <strong>HTML, CSS, JavaScript, Node.js, and Express.js</strong>. I’ve also solved over <strong>650+ DSA problems
+          on LeetCode</strong> to sharpen my logical thinking and coding ability.
+      </p>
+      <p>
+        I value clean code, continuous learning, and collaboration. I’m always eager to take on challenges that push my
+        boundaries and help me grow as a software developer. Currently, I’m exploring internship opportunities where I
+        can contribute meaningfully, learn from real-world
+        projects, and grow alongside inspiring developers.
+      </p>
+    </div>
+
+
+    <!-- Quick Facts Grid -->
+    <div class="quick-facts">
+      <div class="fact">
+        <h3>650+</h3>
+        <p>LeetCode Problems</p>
+      </div>
+      <div class="fact">
+        <h3>4+</h3>
+        <p>Major Projects</p>
+      </div>
+      <div class="fact">
+        <h3>3+</h3>
+        <p>Hackathon Participation</p>
+      </div>
+      <div class="fact">
+        <h3>9.26</h3>
+        <p>Current CGPA</p>
+      </div>
+    </div>
+
+    <!-- Education Timeline -->
+    <div class="timeline">
+      <h3 class="timeline-title">Education</h3>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="timeline-content">
+          <h4>
+            Techno India University
+            <span class="location">| Kolkata, West Bengal</span>
+          </h4>
+          <p>B.Tech in CSE-AIML (2022 – Present)<br>
+            <strong>CGPA: 9.26</strong>
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-user-graduate"></i></div>
+        <div class="timeline-content">
+          <h4>
+            Netaji Subhas Public School
+            <span class="location">| Murshidabad, West Bengal</span>
+          </h4>
+          <p><em>CBSE Board</em><br>Class XII (2022) – <strong>85.5%</strong></p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-school"></i></div>
+        <div class="timeline-content">
+          <h4>
+            Netaji Subhas Public School
+            <span class="location">| Murshidabad, West Bengal</span>
+          </h4>
+          <p><em>CBSE Board</em><br>Class X (2020) – <strong>92.8%</strong></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+
+      <!-- Programming -->
+      <div class="skill-category">
+        <h3>Programming</h3>
+        <div class="skills-list">
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+              alt="C" /><span>C</span></div>
+          <div class="skill"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+              alt="C++" /><span>C++</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+              alt="Java" /><span>Java</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+              alt="Python" /><span>Python</span></div>
+        </div>
+      </div>
+
+      <!-- Web Dev -->
+      <div class="skill-category">
+        <h3>Web Development</h3>
+        <div class="skills-list">
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="HTML" /><span>HTML</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="CSS" /><span>CSS</span></div>
+          <div class="skill"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript" /><span>JavaScript</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              alt="Node.js" /><span>Node.js</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+              alt="Express.js" /><span>Express.js</span></div>
+        </div>
+      </div>
+
+      <!-- Databases & Tools -->
+      <div class="skill-category">
+        <h3>Databases & Tools</h3>
+        <div class="skills-list">
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+              alt="MySQL" /><span>MySQL</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+              alt="MongoDB" /><span>MongoDB</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              alt="Git" /><span>Git</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              alt="GitHub" /><span>GitHub</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+              alt="VS Code" /><span>VS Code</span></div>
+        </div>
+      </div>
+
+      <!-- AI & Cloud -->
+      <div class="skill-category">
+        <h3>AI & Cloud</h3>
+        <div class="skills-list">
+          <div class="skill"><img src="https://img.icons8.com/color/48/000000/azure-1.png" alt="Azure" /><span>Azure
+              AI</span></div>
+          <div class="skill"><img src="https://img.icons8.com/ios-filled/50/cloud.png" alt="Cloud" /><span>Cloud
+              Basics</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- project section -->
+  <section class="projects" id="projects">
+
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+
+      <!-- Pure Flavour -->
+      <div class="project-card">
+        <h3>Pure Flavour</h3>
+        <p>Pure Flavour is a cartridge-based, pocket-friendly water filter designed for rural and underprivileged
+          communities. This website, built using HTML, CSS, and JavaScript, was developed as part of our
+          Entrepreneurship Skill Development (ESD) project to promote the product.</p>
+        <div class="project-links">
+          <a href="https://github.com/AKRITI-KUMARI/Pure_Flavour_ESD_Project" target="_blank">GitHub</a>
+          <a href="https://akriti-kumari.github.io/Pure_Flavour_ESD_Project/" target="_blank">Live Demo</a>
+        </div>
+      </div>
+
+
+      <!-- Quiz Campus -->
+      <div class="project-card">
+        <h3>Quiz Campus</h3>
+        <p>A full-stack web development project created as part of our 6th semester Mini Project in the 3rd year B.Tech
+          curriculum. It includes a frontend for students and faculty, a backend powered by Firebase, and features such
+          as joining codes, countdown timers, and auto-evaluation.</p>
+        <div class="project-links">
+          <a href="https://github.com/AKRITI-KUMARI/Quiz-Campus_Mini-Project" target="_blank">GitHub</a>
+          <a href="https://sprightly-brigadeiros-2c581e.netlify.app/" target="_blank">Live Demo</a>
+        </div>
+      </div>
+
+
+      <!-- Smart Energy Meter -->
+      <div class="project-card">
+        <h3>Smart Energy Meter (IoT)</h3>
+        <p>The Smart Energy Meter is an IoT-based project that monitors electricity usage in real time using current and
+          voltage sensors along with an ESP32 microcontroller. The data is sent to the Blynk app, allowing users to
+          track their power consumption remotely and manage energy usage efficiently.</p>
+        <div class="project-links">
+          <a href="https://drive.google.com/drive/u/0/folders/1d_0mfnoJjESLUjspfHYAGSqoSMUMbJq6" target="_blank">Google
+            Drive</a>
+        </div>
+      </div>
+
+
+      <!-- Tic Tac Toe -->
+      <div class="project-card">
+        <h3>Tic Tac Toe (AI)</h3>
+        <p>The Tic Tac Toe Game is a simple yet engaging two-mode web-based game built using HTML, CSS, and JavaScript.
+          It allows users to play either against another player locally or challenge an AI opponent powered by the
+          Minimax algorithm with alpha-beta pruning for optimal moves.</p>
+        <div class="project-links">
+          <a href="https://github.com/AKRITI-KUMARI/TicTacToe_Game" target="_blank">GitHub</a>
+          <a href="https://akriti-kumari.github.io/TicTacToe_Game/" target="_blank">Live Demo</a>
+        </div>
+      </div>
+
+
+      <!-- Currency Converter -->
+      <div class="project-card">
+        <h3>Currency Converter</h3>
+        <p>The Currency Converter App is a responsive web tool built using HTML, CSS, and JavaScript. With real-time
+          exchange rates powered by a third-party API, it lets users convert between a wide range of global currencies —
+          quickly, accurately, and intuitively.</p>
+        <div class="project-links">
+          <a href="https://github.com/AKRITI-KUMARI/Currency_Converter" target="_blank">GitHub</a>
+          <a href="https://akriti-kumari.github.io/Currency_Converter/" target="_blank">Live Demo</a>
+        </div>
+      </div>
+
+
+      <!-- Humor Hub -->
+      <div class="project-card">
+        <h3>Humor Hub</h3>
+        <p>The Humor Hub Chrome Extension is a lightweight browser add-on that delivers a dose of laughter with every
+          new tab. Built using HTML, CSS, and JavaScript, it fetches random jokes from a public API to brighten your
+          browsing experience.</p>
+        <div class="project-links">
+          <a href="https://github.com/AKRITI-KUMARI/Humor_Hub-Chrome_Extension" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+
+      <!-- To-Do List -->
+      <div class="project-card">
+        <h3>To-Do List</h3>
+        <p>The To-Do List App is a simple yet effective task management tool that helps users organize their daily
+          activities. Built using HTML, CSS, and JavaScript, it allows users to add, delete, and mark tasks as complete
+          for better productivity.</p>
+        <div class="project-links">
+          <a href="https://github.com/AKRITI-KUMARI/To_Do_List" target="_blank">GitHub</a>
+          <a href="https://akriti-kumari.github.io/To_Do_List/" target="_blank">Live Demo</a>
+        </div>
+      </div>
+
+
+      <!-- AI-Based Full Stack Project -->
+      <div class="project-card">
+        <h3>AI-Based Full Stack Project</h3>
+        <p>The AI-Based Full Stack Project is an upcoming intelligent platform that integrates frontend, backend, data
+          science, cloud, and UI/UX design to deliver a seamless and powerful user experience. This all-in-one
+          solution is currently under development and will be launched soon with impactful features and smart
+          automation.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- certificates section -->
+
+  <section class="certificates" id="certificates">
+
+    <h2 class="section-title">Certificates</h2>
+
+    <div class="certificates-grid">
+
+      <!-- Certificate 1 -->
+      <div class="certificate-card">
+        <img src="assets/Microsoft.png" alt="Certificate: Azure AI Fundamentals">
+        <h3>Microsoft Certified: Azure AI Fundamentals</h3>
+        <a href="https://learn.microsoft.com/en-us/users/akritikumari-1885/credentials/cebd3131665b098e?ref=https%3A%2F%2Fwww.linkedin.com%2F"
+          target="_blank" class="view-btn">View Certificate</a>
+      </div>
+
+      <!-- Certificate 2 -->
+      <div class="certificate-card">
+        <img src="assets/FreeCodeCamp.png" alt="Certificate: Responsive Web Design">
+        <h3>FreeCodeCamp: Responsive Web Design</h3>
+        <a href="https://www.freecodecamp.org/certification/Akriti_Kumari/responsive-web-design" target="_blank"
+          class="view-btn">View Certificate</a>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- contact section -->
+
+  <section class="contact" id="contact">
+
+    <h2 class="section-title">Get in Touch</h2>
+
+    <form action="https://formspree.io/f/xovllzqo" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+  </section>
+
+  <!-- footer -->
+  <footer class="footer">
+
+    <p>© 2025 Akriti Kumari. All rights reserved.</p>
+
+    <div class="footer-icons">
+      <a href="https://www.linkedin.com/in/akriti-kumari-116a03251" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/AKRITI-KUMARI" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:kumariakriti3072@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+
+  </footer>
+
+
+  <button id="backToTop" title="Back to Top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
